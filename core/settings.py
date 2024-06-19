@@ -34,6 +34,7 @@ ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 LOCAL_APPS = [
     'accounts',
+    'managefy',
 ]
 
 # Application definition
