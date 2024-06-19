@@ -31,6 +31,9 @@ DEBUG = env.bool('DEBUG')
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
+LOCAL_APPS = [
+    'accounts',
+]
 
 # Application definition
 
