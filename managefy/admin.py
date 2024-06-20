@@ -7,11 +7,14 @@ from .models import (
     UserMessage
 )
 from django.contrib import admin
+from django.contrib.auth.models import Group
 from django.utils.translation import gettext_lazy as _
 
 admin.site.site_header = "Himmat 700+ loyihasi"
 admin.site.site_title = "Himmat 700+"
 admin.site.index_title = "Himmat 700+ "
+
+admin.site.unregister(Group)
 
 
 @admin.register(TelegramGroups)
